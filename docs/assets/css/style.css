@@ -52,13 +52,12 @@ body {
   width: calc(100% - 250px);
 }
 .hero {
-  padding: 100px 20px 80px;
-  color: white;
-  background-color: #324d9b;
+  background-image: url('assets/images/Homepage_Background.webp');
   background-size: cover;
   background-position: center;
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); /* creates diagonal cut */
 }
+
 
 /* Diagonal stripe thingy */
 .hero-inner {
