@@ -16,19 +16,19 @@ body {
   padding: 30px;
 }
 
-/*****to scroll on mobile*****/
-html, body {
-  height: auto;
-  min-height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
 
 
 /*************(***** For smaller screens (phones, etc.) *****************/
 @media (max-width: 768px) {
   body {
     flex-direction: column;
+  }
+
+  /*****to scroll on mobile*****/
+  html, body {
+    height: auto;             
+    overflow-x: hidden;
+    display: block;
   }
 
   .profile-pic img {
@@ -47,13 +47,15 @@ html, body {
     background-color: #1a1a1a;
     padding: 20px;
     color: white;
-    z-index: 1;
+    z-index: 2;
   }
 
   .content {
     margin-left: 0;
     width: 100%;
     padding: 20px; 
+    position: relative;
+    z-index: 1;
   }
 
   .nav ul {
