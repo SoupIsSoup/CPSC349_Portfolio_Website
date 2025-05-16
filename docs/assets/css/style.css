@@ -8,7 +8,7 @@ body {
   height: 100%;
 }
 
-/* Responsive content area beside sidebar */
+/* Ensures content does not get covered by side bar */
 .content {
   margin-left: 250px;
   width: calc(100% - 250px);
@@ -16,7 +16,7 @@ body {
   padding: 30px;
 }
 
-/* Responsive behavior for smaller screens */
+/* For smaller screens (phones, etc.) */
 @media (max-width: 768px) {
   body {
     flex-direction: column;
@@ -43,7 +43,7 @@ body {
   }
 }
 
-/* === SIDEBAR === */
+/******* SIDEBAR *****/
 .sidebar {
   width: 250px;
   background-color: #1c1c1c;
@@ -88,7 +88,7 @@ body {
   text-decoration: none;
 }
 
-/* === HERO SECTION (TOP BACKGROUND IMAGE) === */
+/****** HERO SECTION (TOP BACKGROUND IMAGE) *****/
 .hero-diagonal {
   height: 100vh;
   position: relative;
@@ -110,7 +110,7 @@ body {
   padding: 40px 20px;
 }
 
-/* Bottom dark blue diagonal with content */
+/* Bottom dark blue diagonal with about */
 .diagonal-content {
   flex: 1;
   background-color: #324d9b;
@@ -139,7 +139,7 @@ body {
   color: white;
 }
 
-/* === MOBILE HEADER TOGGLE === */
+/* *****MOBILE HEADER TOGGLE ******/
 .mobile-header {
   display: none;
   background: #1c1c1c;
@@ -155,7 +155,7 @@ body {
 }
 
 
-/* === ABOUT ME SECTION === */
+/* *****ABOUT ME SECTION ***/
 .about-section {
   max-width: 900px;
   margin: 0 auto;
@@ -225,7 +225,7 @@ ul li {
 
 
 
-/* === CONTACT SECTION === */
+/*****CONTACT SECTION ***/
 /* Contact Page Styles */
 .contact-page {
   max-width: 1000px;
@@ -349,6 +349,17 @@ ul li {
   background-color: #1e1e1e;
   color: #fff;
 }
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+  border-bottom: 3px solid #3b82f6;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
 
 .skills-grid {
   display: flex;
