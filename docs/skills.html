@@ -34,40 +34,41 @@
 
 
   <!--------MAIN CONTENT-->
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Skills | Portfolio</title>
-  <link rel="stylesheet" href="assets/css/style.css"/>
-</head>
-<body>
-  {% include 'base.html' %}
-
-  <main class="page-section">
-    <h1>Skills</h1>
-    <div class="skills-grid">
-      <div class="skills-column">
-        <h2>Technical</h2>
-        <ul>
-          <li>Unit testing and test-driven development (TDD)</li>
-          <li>JavaScript frameworks (React, Angular, Vue)</li>
-          <li>Cloud computing (AWS, Azure, Google Cloud)</li>
-          <li>Proficient in Java</li>
-          <li>Strong debugging skills</li>
-        </ul>
+ <main class="content">
+    <section class="skills-section">
+      <h1>My Skills</h1>
+      <div class="skills-table-wrapper">
+        <table class="skills-table">
+          <thead>
+            <tr>
+              <th>Technical</th>
+              <th>Non-technical</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <ul>
+                  <li>Unit testing and test-driven development (TDD)</li>
+                  <li>JavaScript frameworks (React, Angular, Vue)</li>
+                  <li>Cloud computing (AWS, Azure, Google Cloud)</li>
+                  <li>Proficient in Java</li>
+                  <li>Strong debugging skills</li>
+                </ul>
+              </td>
+              <td>
+                <ul>
+                  <li><strong>Adaptability:</strong> I am able to continuously learn and adapt to new programming languages, tools, and methodologies</li>
+                  <li><strong>Problem-Solving Abilities:</strong> I am able to analyze complex problems and devise effective solutions</li>
+                  <li><strong>Collaboration:</strong> I am able to communicate effectively with colleagues, stakeholders, and clients, fostering collaboration and enhancing project outcomes</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-
-      <div class="skills-column">
-        <h2>Non-technical</h2>
-        <ul>
-          <li><strong>Adaptability:</strong> Able to continuously learn and adapt to new programming languages, tools, and methodologies</li>
-          <li><strong>Problem-Solving Abilities:</strong> Can analyze complex problems and devise effective solutions</li>
-          <li><strong>Collaboration:</strong> Communicates effectively with colleagues, stakeholders, and clients, fostering teamwork</li>
-        </ul>
-      </div>
-    </div>
+    </section>
   </main>
 </body>
+</html>
 </html>
