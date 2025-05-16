@@ -76,38 +76,47 @@ body {
 }
 
 /* === HERO SECTION (TOP BACKGROUND IMAGE) === */
-.hero {
+.hero-diagonal {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top image area */
+.image-background {
+  flex: 1;
   background-image: url('../images/Homepage_Background.webp');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  padding: 100px 20px;
-  color: white;
-  text-align: center;
 }
 
-.hero-inner {
-  max-width: 800px;
-  margin: auto;
-}
-
-/* === INTRO SECTION (BLUE SLOPE) === */
-.intro-slope {
+/* Bottom dark blue diagonal with content */
+.diagonal-content {
+  flex: 1;
   background-color: #324d9b;
-  color: white;
-  padding: 80px 20px;
-  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
 }
 
-.intro-text {
+.hero-text {
+  color: white;
   max-width: 800px;
-  margin: auto;
   text-align: center;
 }
 
-/* === TAGLINE TEXT === */
 .tagline {
   font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.intro {
+  margin-top: 20px;
+  font-size: 1em;
 }
 
 /* === MOBILE HEADER TOGGLE === */
