@@ -1,22 +1,26 @@
-/********** HOMEPAGE**********/
 body {
   margin: 0;
   font-family: sans-serif;
   display: flex;
   flex-direction: row;
 }
+
+/* Mobile header with hamburger toggle */
 .mobile-header {
   display: none;
   background: #1c1c1c;
   padding: 10px;
   color: white;
 }
+
 #menu-toggle {
   font-size: 24px;
   background: none;
   border: none;
   color: white;
 }
+
+/* Sidebar styling */
 .sidebar {
   width: 250px;
   background-color: #1c1c1c;
@@ -26,6 +30,7 @@ body {
   padding: 20px;
   box-sizing: border-box;
 }
+
 .profile-pic {
   width: 120px;
   height: 120px;
@@ -36,40 +41,60 @@ body {
   justify-content: center;
   margin: 0 auto 20px;
 }
+
 .sidebar nav ul {
   list-style: none;
   padding: 0;
 }
+
 .sidebar nav ul li {
   margin: 15px 0;
 }
+
 .sidebar nav ul li a {
   color: white;
   text-decoration: none;
 }
+
+/* Content area beside sidebar */
 .content {
   margin-left: 250px;
   width: calc(100% - 250px);
 }
+
+/* Hero section with background image and diagonal overlay */
 .hero {
-  padding: 100px 20px 80px; /* ADD this for vertical space */
-  background-image: url('../images/Homepage_Background.webp');
+  position: relative;
+  background-image: url('../images/Homepage_Background.webp'); /* Your image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-  color: white; /* ensures text is visible on image */
+  padding: 100px 20px 80px;
+  color: white;
 }
 
+/* Blue overlay on top of image */
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(50, 77, 155, 0.6); /* blue tint */
+  z-index: 0;
+}
 
-/* Diagonal stripe thingy */
+/* Hero content sits above the overlay */
 .hero-inner {
+  position: relative;
+  z-index: 1;
   max-width: 800px;
   margin: auto;
   text-align: center;
 }
 
-/* Tagline below main heading */
+/* Tagline below the main heading */
 .tagline {
   font-size: 1.2em;
 }
@@ -78,22 +103,28 @@ body {
 .intro-text {
   margin-top: 40px;
 }
+
+/* Responsive layout for smaller screens */
 @media (max-width: 768px) {
   body {
     flex-direction: column;
   }
+
   .mobile-header {
     display: block;
   }
+
   .sidebar {
     display: none;
     width: 100%;
     height: auto;
     position: static;
   }
+
   .sidebar.open {
     display: block;
   }
+
   .content {
     margin-left: 0;
     width: 100%;
