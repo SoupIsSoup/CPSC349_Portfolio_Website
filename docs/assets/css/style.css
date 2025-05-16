@@ -53,7 +53,7 @@ body {
 }
 .hero {
   padding: 100px 20px 80px; /* ADD this for vertical space */
-  background-image: url('assets/images/Homepage_Background.webp');
+  background-image: url('../images/Homepage_Background.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
