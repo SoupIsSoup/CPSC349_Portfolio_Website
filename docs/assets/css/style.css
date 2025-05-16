@@ -1,14 +1,19 @@
 body {
-  margin: 0;
-  font-family: sans-serif;
   display: flex;
-  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #1e1e1e;
+  color: white;
+  height: 100%;
 }
 
 /* Responsive content area beside sidebar */
 .content {
   margin-left: 250px;
   width: calc(100% - 250px);
+  box-sizing: border-box;
+  padding: 30px;
 }
 
 /* Responsive behavior for smaller screens */
@@ -152,56 +157,37 @@ body {
 
 /* === ABOUT ME SECTION === */
 .about-section {
-  background-color: #1e1e1e; /* dark gray */
-  color: #ffffff;
-  padding: 60px 30px;
-  font-family: sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .about-section h1 {
-  text-align: center;
-  margin-bottom: 40px;
   font-size: 2.5em;
+  margin-bottom: 10px;
   border-bottom: 2px solid #00bfff;
   display: inline-block;
 }
 
 .about-intro {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto 60px;
   font-size: 1.2em;
-}
-
-.about-grid {
-  display: flex;
-  gap: 40px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.about-column {
-  flex: 1;
-  min-width: 300px;
-  max-width: 600px;
+  color: #ccc;
+  margin-bottom: 40px;
 }
 
 .about-column h2 {
   font-size: 1.5em;
-  margin-top: 40px;
+  margin-bottom: 20px;
   border-left: 4px solid #00bfff;
   padding-left: 10px;
 }
 
-.about-column h3 {
-  margin-bottom: 5px;
-  font-size: 1.2em;
+.experience-entry {
+  margin-bottom: 30px;
 }
 
 .date {
   font-size: 0.9em;
   color: #bbbbbb;
-  margin-bottom: 5px;
 }
 
 .italic {
@@ -210,7 +196,6 @@ body {
 }
 
 ul {
-  list-style: disc;
   padding-left: 20px;
 }
 
