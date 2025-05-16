@@ -340,3 +340,32 @@ ul li {
 .project-gallery img:hover {
   transform: scale(1.03);
 }
+
+/***********SKILLS PART ****/
+.page-section {
+  margin-left: 250px;
+  padding: 60px 40px;
+  min-height: 100vh;
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.skills-column {
+  flex: 1 1 300px;
+  max-width: 500px;
+}
+
+.skills-column h2 {
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
