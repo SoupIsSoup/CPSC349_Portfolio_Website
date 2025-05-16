@@ -52,10 +52,13 @@ body {
   width: calc(100% - 250px);
 }
 .hero {
+  padding: 100px 20px 80px; /* ADD this for vertical space */
   background-image: url('assets/images/Homepage_Background.webp');
   background-size: cover;
   background-position: center;
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); /* creates diagonal cut */
+  background-repeat: no-repeat;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  color: white; /* ensures text is visible on image */
 }
 
 
