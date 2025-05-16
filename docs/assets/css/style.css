@@ -16,31 +16,63 @@ body {
   padding: 30px;
 }
 
-/* For smaller screens (phones, etc.) */
+/*************(***** For smaller screens (phones, etc.) *****************/
 @media (max-width: 768px) {
   body {
     flex-direction: column;
   }
 
   .profile-pic img {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
   }
 
    .sidebar {
+    position: static;
     width: 100%;
     height: auto;
-    position: relative;
-    display: block;
+    background-color: #1a1a1a;
     padding: 20px;
-    border-top: 1px solid #333;
-    order: 2; 
+    color: white;
   }
 
   .content {
     margin-left: 0;
     width: 100%;
-    order: 1; 
+    padding: 20px; 
+  }
+
+  .nav ul {
+    padding: 0;
+    text-align: center;
+  }
+
+  .nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+
+  .hero {
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  }
+
+  .hero-inner {
+    text-align: center;
+    max-width: 90%;
+    margin: auto;
+  }
+
+  .tagline,
+  .intro-text {
+    color: white;
   }
 }
 
