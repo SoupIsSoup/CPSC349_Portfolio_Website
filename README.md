@@ -1,2 +1,2 @@
-# CPSC349_Portfolio_Website
-home test
+# HOW TO RUN
+Click on the link to launch the website : 
