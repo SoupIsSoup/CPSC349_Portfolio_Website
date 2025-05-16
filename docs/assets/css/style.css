@@ -1,4 +1,4 @@
-/* === GENERAL LAYOUT === */
+/* === GENERAL STYLES === */
 body {
   margin: 0;
   font-family: sans-serif;
@@ -6,11 +6,13 @@ body {
   flex-direction: row;
 }
 
+/* Responsive content area beside sidebar */
 .content {
   margin-left: 250px;
   width: calc(100% - 250px);
 }
 
+/* Responsive behavior for smaller screens */
 @media (max-width: 768px) {
   body {
     flex-direction: column;
@@ -73,6 +75,7 @@ body {
   text-decoration: none;
 }
 
+/* === HERO SECTION (TOP BACKGROUND IMAGE) === */
 .hero {
   background-image: url('../images/Homepage_Background.webp');
   background-size: cover;
@@ -88,7 +91,7 @@ body {
   margin: auto;
 }
 
-/* Blue section with diagonal cut */
+/* === INTRO SECTION (BLUE SLOPE) === */
 .intro-slope {
   background-color: #324d9b;
   color: white;
@@ -100,4 +103,24 @@ body {
   max-width: 800px;
   margin: auto;
   text-align: center;
+}
+
+/* === TAGLINE TEXT === */
+.tagline {
+  font-size: 1.2em;
+}
+
+/* === MOBILE HEADER TOGGLE === */
+.mobile-header {
+  display: none;
+  background: #1c1c1c;
+  padding: 10px;
+  color: white;
+}
+
+#menu-toggle {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
 }
