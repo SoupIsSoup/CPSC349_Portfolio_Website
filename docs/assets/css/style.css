@@ -203,6 +203,27 @@ ul li {
   margin-bottom: 8px;
 }
 
+.resume-link {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.resume-link a {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #00bfff;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.resume-link a:hover {
+  background-color: #009ad6;
+}
+
+
 
 /* === CONTACT SECTION === */
 /* Contact Page Styles */
