@@ -1,3 +1,4 @@
+/********** HOMEPAGE**********/
 body {
   margin: 0;
   font-family: sans-serif;
@@ -51,19 +52,29 @@ body {
   width: calc(100% - 250px);
 }
 .hero {
-  padding: 100px 20px;
+  padding: 100px 20px 80px;
   color: white;
+  background-color: #324d9b;
   background-size: cover;
   background-position: center;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
+
+/* Diagonal stripe thingy */
+.hero-inner {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Tagline below main heading */
 .tagline {
   font-size: 1.2em;
 }
-.intro {
-  padding: 40px 20px;
-  background-color: #f8f8f8;
-  color: #333;
+
+/* Brief intro inside sloped hero */
+.intro-text {
+  margin-top: 40px;
 }
 @media (max-width: 768px) {
   body {
