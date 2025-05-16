@@ -2,15 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home | Portfolio</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/script.js" defer></script>
 </head>
 <body>
+  <header class="mobile-header">
+    <button id="menu-toggle">&#9776;</button>
+  </header>
+
   <!-- Sidebar Start -->
-  <aside class="sidebar">
-    <img src="assets/images/profile.jpg" alt="Profile Picture"><!-- picture of you here -->
+  <aside class="sidebar" id="sidebar">
+    <div class="profile-pic">Profile Picture</div> <!-- picture of you here -->
     <h2>John Doe</h2>
-    <nav>
+    <nav class="nav">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -34,7 +40,5 @@
       <p>Hi, I'm John — a software developer based in California. I specialize in building full-stack web applications with a focus on clean design and intuitive UX.</p>
     </section>
   </main>
-
-  <script src="assets/js/script.js"></script>
 </body>
 </html>
