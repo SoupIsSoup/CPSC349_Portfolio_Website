@@ -73,7 +73,6 @@ body {
   text-decoration: none;
 }
 
-/* === HERO SECTION (TOP) === */
 .hero {
   background-image: url('../images/Homepage_Background.webp');
   background-size: cover;
@@ -89,7 +88,7 @@ body {
   margin: auto;
 }
 
-/* === INTRO SLOPE SECTION (BOTTOM) === */
+/* Blue section with diagonal cut */
 .intro-slope {
   background-color: #324d9b;
   color: white;
