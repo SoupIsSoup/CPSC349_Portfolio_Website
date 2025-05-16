@@ -99,6 +99,11 @@ body {
   background-image: url('../images/Home_Image.jpg');
   background-size: cover;
   background-position: center;
+  position: relative; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
 }
 
 /* Bottom dark blue diagonal with content */
@@ -106,6 +111,7 @@ body {
   flex: 1;
   background-color: #324d9b;
   clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%);
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -126,6 +132,7 @@ body {
 .intro {
   margin-top: 20px;
   font-size: 1em;
+  color: white;
 }
 
 /* === MOBILE HEADER TOGGLE === */
