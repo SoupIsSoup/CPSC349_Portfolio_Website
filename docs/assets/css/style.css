@@ -19,12 +19,13 @@ body {
 
 
 /*************(***** For smaller screens (phones, etc.) *****************/
-@media (max-width: 768px) {
+@media (max-width: 999px) {
   body {
     flex-direction: column;
   }
 
   /*****to scroll on mobile*****/
+  /*****NOT FUNCTIONAL YET *******/
   html, body {
     height: auto;             
     overflow-x: hidden;
