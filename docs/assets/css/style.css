@@ -86,7 +86,7 @@ body {
 
 /* Top image area */
 .image-background {
-  flex: 1;
+  flex: 3;
   background-image: url('../images/Homepage_Background.webp');
   background-size: cover;
   background-position: center;
@@ -96,7 +96,7 @@ body {
 .diagonal-content {
   flex: 1;
   background-color: #324d9b;
-  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%);
   display: flex;
   align-items: center;
   justify-content: center;
