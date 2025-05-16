@@ -16,6 +16,15 @@ body {
   padding: 30px;
 }
 
+/*****to scroll on mobile*****/
+html, body {
+  height: auto;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
 /*************(***** For smaller screens (phones, etc.) *****************/
 @media (max-width: 768px) {
   body {
