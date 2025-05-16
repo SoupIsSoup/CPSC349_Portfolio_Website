@@ -303,10 +303,8 @@ ul li {
 
 /************** Projects Page *********/
 .projects-section {
-  padding: 60px 40px;
-  color: #ffffff;
-  background-color: #1e1e1e;
-  min-height: 100vh;
+  max-width: 900px;
+  width: 100%;
 }
 
 .projects-section h1 {
