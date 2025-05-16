@@ -219,11 +219,13 @@ ul li {
   display: inline-block;
 }
 
+/* Grid for contact layout */
 .contact-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .contact-info, .contact-form {
@@ -231,31 +233,40 @@ ul li {
   min-width: 300px;
 }
 
+/* Contact form styling */
 .contact-form form {
   display: flex;
   flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 .contact-form input,
 .contact-form textarea {
   padding: 10px;
-  margin-bottom: 15px;
   background-color: #2a2a2a;
   border: 1px solid #444;
   color: white;
   border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .contact-form button {
-  padding: 10px;
+  padding: 12px;
   background-color: #00bfff;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
 }
 
 .contact-form button:hover {
   background-color: #009ad6;
 }
-
