@@ -56,6 +56,10 @@ body {
   border-radius: 50%;
   overflow: hidden;
   margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #444; /* optional fallback */
 }
 
 .profile-pic img {
@@ -64,6 +68,7 @@ body {
   object-fit: cover;
   display: block;
 }
+
 
 .sidebar nav ul {
   list-style: none;
