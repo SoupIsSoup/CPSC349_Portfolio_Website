@@ -87,7 +87,7 @@ body {
 /* Top image area */
 .image-background {
   flex: 3;
-  background-image: url('../images/Homepage_Background.webp');
+  background-image: url('../images/Home_Image.jpg');
   background-size: cover;
   background-position: center;
 }
